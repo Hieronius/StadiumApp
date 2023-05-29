@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dCQ-dh-4iB">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="PM___sport_club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIW-Z2-PWr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeMain" translatesAutoresizingMaskIntoConstraints="NO" id="5Eb-ng-QX8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7W-Nv-YDJ">
+                                        <rect key="frame" x="15" y="561" width="345" height="50"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="b0B-jK-Qiz"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.29803921568627451" green="0.18431372549019609" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                                        <connections>
+                                            <action selector="welcomeContinueButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RlR-eQ-ScV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Находите и бронируйте спортивные площадки!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENv-Bm-YrT">
+                                        <rect key="frame" x="15" y="478" width="345" height="53"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5Eb-ng-QX8" secondAttribute="trailing" id="1C4-yh-l7i"/>
+                                    <constraint firstItem="y7W-Nv-YDJ" firstAttribute="leading" secondItem="WIW-Z2-PWr" secondAttribute="leading" constant="15" id="61H-LR-66F"/>
+                                    <constraint firstAttribute="trailing" secondItem="y7W-Nv-YDJ" secondAttribute="trailing" constant="15" id="DJc-HT-bKU"/>
+                                    <constraint firstItem="5Eb-ng-QX8" firstAttribute="leading" secondItem="WIW-Z2-PWr" secondAttribute="leading" id="INx-0Y-RZM"/>
+                                    <constraint firstAttribute="bottom" secondItem="y7W-Nv-YDJ" secondAttribute="bottom" constant="56" id="IdH-Ea-5ui"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Eb-ng-QX8" secondAttribute="bottom" id="eGS-G1-xfQ"/>
+                                    <constraint firstItem="ENv-Bm-YrT" firstAttribute="centerX" secondItem="WIW-Z2-PWr" secondAttribute="centerX" id="fBJ-Tn-7dd"/>
+                                    <constraint firstItem="y7W-Nv-YDJ" firstAttribute="centerX" secondItem="WIW-Z2-PWr" secondAttribute="centerX" id="gNu-9X-7e1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ENv-Bm-YrT" secondAttribute="trailing" constant="15" id="rmp-RW-8Pf"/>
+                                    <constraint firstItem="5Eb-ng-QX8" firstAttribute="top" secondItem="WIW-Z2-PWr" secondAttribute="top" id="tiO-jZ-R1J"/>
+                                    <constraint firstItem="ENv-Bm-YrT" firstAttribute="leading" secondItem="WIW-Z2-PWr" secondAttribute="leading" constant="15" id="yJ0-27-1bv"/>
+                                    <constraint firstItem="y7W-Nv-YDJ" firstAttribute="top" secondItem="ENv-Bm-YrT" secondAttribute="bottom" constant="30" id="zlD-Yu-72b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WIW-Z2-PWr" secondAttribute="trailing" id="C6B-1c-FT1"/>
+                            <constraint firstItem="WIW-Z2-PWr" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Qev-OB-mGb"/>
+                            <constraint firstAttribute="bottom" secondItem="WIW-Z2-PWr" secondAttribute="bottom" id="zAc-UH-E0c"/>
+                            <constraint firstItem="WIW-Z2-PWr" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ztK-0f-Urv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0E3-Hj-al1">
+                        <barButtonItem key="backBarButtonItem" title=" " id="0Dw-kO-uZQ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="welcomeContinueButton" destination="y7W-Nv-YDJ" id="Qqx-jx-s9V"/>
+                        <outlet property="welcomeLabel" destination="ENv-Bm-YrT" id="4h9-mO-tkf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2930.4000000000001" y="3.1484257871064472"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cro-x8-gAU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dCQ-dh-4iB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OET-Z7-QPY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="RwR-XA-TwV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkp-Gz-FYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991.2" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WelcomeMain" width="1500" height="3248"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

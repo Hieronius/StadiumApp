@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD05D9B929C8AD2E00E14F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9B829C8AD2E00E14F03 /* AppDelegate.swift */; };
+		DD05D9BB29C8AD2E00E14F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9BA29C8AD2E00E14F03 /* SceneDelegate.swift */; };
+		DD05D9BD29C8AD2E00E14F03 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9BC29C8AD2E00E14F03 /* WelcomeViewController.swift */; };
+		DD05D9C229C8AD3300E14F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD05D9C129C8AD3300E14F03 /* Assets.xcassets */; };
+		DD05D9C529C8AD3300E14F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD05D9C329C8AD3300E14F03 /* LaunchScreen.storyboard */; };
+		DD05D9D929CA083200E14F03 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9D829CA083200E14F03 /* UIView+Extension.swift */; };
+		DD05D9DB29CA088900E14F03 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9DA29CA088900E14F03 /* UITextField+Extension.swift */; };
+		DD05D9DD29CA08AF00E14F03 /* UIViewController+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9DC29CA08AF00E14F03 /* UIViewController+Extension .swift */; };
+		DD05D9E229CA2B3A00E14F03 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DD05D9E129CA2B3A00E14F03 /* IQKeyboardManagerSwift */; };
+		DD05D9E429CA2BB800E14F03 /* AppDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD05D9E329CA2BB800E14F03 /* AppDelegate+Extension.swift */; };
+		DD0F5A4429EB329400259E94 /* MKMapView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0F5A4329EB329400259E94 /* MKMapView+Extension.swift */; };
+		DD417E7229EDB01F00AAD52E /* SelectedStadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD417E7129EDB01F00AAD52E /* SelectedStadium.swift */; };
+		DD4873A229CCC803009F4D38 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4873A129CCC802009F4D38 /* UIViewController+Extension.swift */; };
+		DD4873A429CCC9F5009F4D38 /* Stadiums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4873A329CCC9F5009F4D38 /* Stadiums.swift */; };
+		DD4873A629CCCBAB009F4D38 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4873A529CCCBAB009F4D38 /* Coordinates.swift */; };
+		DD4873A829CF3BDA009F4D38 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4873A729CF3BDA009F4D38 /* Welcome.storyboard */; };
+		DD7EB97929D08A8700371AD8 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7EB97829D08A8700371AD8 /* MapViewController.storyboard */; };
+		DD7EB97B29D08E8F00371AD8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7EB97A29D08E8F00371AD8 /* MapViewController.swift */; };
+		DDB6E78529DDAC4A00824511 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB6E78429DDAC4A00824511 /* SearchTextField.swift */; };
+		DDC5288929EC2E6D007FCAA9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC5288829EC2E6D007FCAA9 /* DetailViewController.swift */; };
+		DDC5288B29EC2E7C007FCAA9 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC5288A29EC2E7C007FCAA9 /* DetailViewController.storyboard */; };
+		DDC5288D29EC2E96007FCAA9 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC5288C29EC2E96007FCAA9 /* ReservationViewController.swift */; };
+		DDC5288F29EC2EA4007FCAA9 /* ReservationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC5288E29EC2EA4007FCAA9 /* ReservationViewController.storyboard */; };
+		DDF63B5529DF3FDA00713389 /* CleaningButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63B5429DF3FDA00713389 /* CleaningButton.swift */; };
+		DDF63B5B29E06F8500713389 /* StadiumInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF63B5A29E06F8500713389 /* StadiumInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD05D9B529C8AD2E00E14F03 /* PM - sport club.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PM - sport club.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD05D9B829C8AD2E00E14F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD05D9BA29C8AD2E00E14F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD05D9BC29C8AD2E00E14F03 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DD05D9C129C8AD3300E14F03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD05D9C429C8AD3300E14F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD05D9C629C8AD3300E14F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD05D9D829CA083200E14F03 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DD05D9DA29CA088900E14F03 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		DD05D9DC29CA08AF00E14F03 /* UIViewController+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension .swift"; sourceTree = "<group>"; };
+		DD05D9E329CA2BB800E14F03 /* AppDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Extension.swift"; sourceTree = "<group>"; };
+		DD0F5A4329EB329400259E94 /* MKMapView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+Extension.swift"; sourceTree = "<group>"; };
+		DD417E7129EDB01F00AAD52E /* SelectedStadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStadium.swift; sourceTree = "<group>"; };
+		DD4873A129CCC802009F4D38 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DD4873A329CCC9F5009F4D38 /* Stadiums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadiums.swift; sourceTree = "<group>"; };
+		DD4873A529CCCBAB009F4D38 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		DD4873A729CF3BDA009F4D38 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		DD7EB97829D08A8700371AD8 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		DD7EB97A29D08E8F00371AD8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DDB6E78429DDAC4A00824511 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		DDC5288829EC2E6D007FCAA9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DDC5288A29EC2E7C007FCAA9 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		DDC5288C29EC2E96007FCAA9 /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		DDC5288E29EC2EA4007FCAA9 /* ReservationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReservationViewController.storyboard; sourceTree = "<group>"; };
+		DDF63B5429DF3FDA00713389 /* CleaningButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningButton.swift; sourceTree = "<group>"; };
+		DDF63B5A29E06F8500713389 /* StadiumInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumInfo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD05D9B229C8AD2E00E14F03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD05D9E229CA2B3A00E14F03 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD05D9AC29C8AD2E00E14F03 = {
+			isa = PBXGroup;
+			children = (
+				DD05D9B729C8AD2E00E14F03 /* PM - sport club */,
+				DD05D9B629C8AD2E00E14F03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD05D9B629C8AD2E00E14F03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD05D9B529C8AD2E00E14F03 /* PM - sport club.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD05D9B729C8AD2E00E14F03 /* PM - sport club */ = {
+			isa = PBXGroup;
+			children = (
+				DDB8320329DF168F00C756CD /* Custom */,
+				DD05D9CC29C8AF6400E14F03 /* Controllers */,
+				DD05D9D029C8AF9500E14F03 /* Models */,
+				DD05D9D129C8AF9E00E14F03 /* Protocols */,
+				DD05D9CE29C8AF7E00E14F03 /* Extensions */,
+				DD05D9CD29C8AF6B00E14F03 /* Enums */,
+				DD05D9CF29C8AF8C00E14F03 /* Helpers */,
+				DD05D9D329C8AFB100E14F03 /* Services */,
+				DD05D9D229C8AFA700E14F03 /* Resources */,
+			);
+			path = "PM - sport club";
+			sourceTree = "<group>";
+		};
+		DD05D9CC29C8AF6400E14F03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD05D9D429CA016F00E14F03 /* Welcome */,
+				DD05D9D529CA017400E14F03 /* Map */,
+				DD05D9D629CA018700E14F03 /* Detail */,
+				DD05D9D729CA018C00E14F03 /* Reservation */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD05D9CD29C8AF6B00E14F03 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DD05D9CE29C8AF7E00E14F03 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD05D9D829CA083200E14F03 /* UIView+Extension.swift */,
+				DD05D9DA29CA088900E14F03 /* UITextField+Extension.swift */,
+				DD05D9DC29CA08AF00E14F03 /* UIViewController+Extension .swift */,
+				DD05D9E329CA2BB800E14F03 /* AppDelegate+Extension.swift */,
+				DD4873A129CCC802009F4D38 /* UIViewController+Extension.swift */,
+				DD0F5A4329EB329400259E94 /* MKMapView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD05D9CF29C8AF8C00E14F03 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD05D9BA29C8AD2E00E14F03 /* SceneDelegate.swift */,
+				DD05D9B829C8AD2E00E14F03 /* AppDelegate.swift */,
+				DD05D9C329C8AD3300E14F03 /* LaunchScreen.storyboard */,
+				DD05D9C629C8AD3300E14F03 /* Info.plist */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DD05D9D029C8AF9500E14F03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDF63B5929E06D8100713389 /* MapModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD05D9D129C8AF9E00E14F03 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DD05D9D229C8AFA700E14F03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD05D9C129C8AD3300E14F03 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD05D9D329C8AFB100E14F03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD05D9D429CA016F00E14F03 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				DD05D9BC29C8AD2E00E14F03 /* WelcomeViewController.swift */,
+				DD4873A729CF3BDA009F4D38 /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		DD05D9D529CA017400E14F03 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DD7EB97A29D08E8F00371AD8 /* MapViewController.swift */,
+				DD7EB97829D08A8700371AD8 /* MapViewController.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DD05D9D629CA018700E14F03 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DDC5288829EC2E6D007FCAA9 /* DetailViewController.swift */,
+				DDC5288A29EC2E7C007FCAA9 /* DetailViewController.storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DD05D9D729CA018C00E14F03 /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				DDC5288C29EC2E96007FCAA9 /* ReservationViewController.swift */,
+				DDC5288E29EC2EA4007FCAA9 /* ReservationViewController.storyboard */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		DDB8320329DF168F00C756CD /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DDB6E78429DDAC4A00824511 /* SearchTextField.swift */,
+				DDF63B5429DF3FDA00713389 /* CleaningButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		DDF63B5929E06D8100713389 /* MapModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD4873A329CCC9F5009F4D38 /* Stadiums.swift */,
+				DD4873A529CCCBAB009F4D38 /* Coordinates.swift */,
+				DDF63B5A29E06F8500713389 /* StadiumInfo.swift */,
+				DD417E7129EDB01F00AAD52E /* SelectedStadium.swift */,
+			);
+			path = MapModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD05D9B429C8AD2E00E14F03 /* PM - sport club */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD05D9C929C8AD3300E14F03 /* Build configuration list for PBXNativeTarget "PM - sport club" */;
+			buildPhases = (
+				DD05D9B129C8AD2E00E14F03 /* Sources */,
+				DD05D9B229C8AD2E00E14F03 /* Frameworks */,
+				DD05D9B329C8AD2E00E14F03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PM - sport club";
+			packageProductDependencies = (
+				DD05D9E129CA2B3A00E14F03 /* IQKeyboardManagerSwift */,
+			);
+			productName = "PM - sport club";
+			productReference = DD05D9B529C8AD2E00E14F03 /* PM - sport club.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD05D9AD29C8AD2E00E14F03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DD05D9B429C8AD2E00E14F03 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = DD05D9B029C8AD2E00E14F03 /* Build configuration list for PBXProject "PM - sport club" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD05D9AC29C8AD2E00E14F03;
+			packageReferences = (
+				DD05D9E029CA2B3A00E14F03 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = DD05D9B629C8AD2E00E14F03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD05D9B429C8AD2E00E14F03 /* PM - sport club */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD05D9B329C8AD2E00E14F03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC5288F29EC2EA4007FCAA9 /* ReservationViewController.storyboard in Resources */,
+				DD05D9C529C8AD3300E14F03 /* LaunchScreen.storyboard in Resources */,
+				DD05D9C229C8AD3300E14F03 /* Assets.xcassets in Resources */,
+				DDC5288B29EC2E7C007FCAA9 /* DetailViewController.storyboard in Resources */,
+				DD4873A829CF3BDA009F4D38 /* Welcome.storyboard in Resources */,
+				DD7EB97929D08A8700371AD8 /* MapViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD05D9B129C8AD2E00E14F03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF63B5529DF3FDA00713389 /* CleaningButton.swift in Sources */,
+				DD7EB97B29D08E8F00371AD8 /* MapViewController.swift in Sources */,
+				DD05D9D929CA083200E14F03 /* UIView+Extension.swift in Sources */,
+				DD4873A429CCC9F5009F4D38 /* Stadiums.swift in Sources */,
+				DD05D9DD29CA08AF00E14F03 /* UIViewController+Extension .swift in Sources */,
+				DD4873A229CCC803009F4D38 /* UIViewController+Extension.swift in Sources */,
+				DD05D9E429CA2BB800E14F03 /* AppDelegate+Extension.swift in Sources */,
+				DDC5288929EC2E6D007FCAA9 /* DetailViewController.swift in Sources */,
+				DD05D9DB29CA088900E14F03 /* UITextField+Extension.swift in Sources */,
+				DD05D9BD29C8AD2E00E14F03 /* WelcomeViewController.swift in Sources */,
+				DD417E7229EDB01F00AAD52E /* SelectedStadium.swift in Sources */,
+				DDF63B5B29E06F8500713389 /* StadiumInfo.swift in Sources */,
+				DD05D9B929C8AD2E00E14F03 /* AppDelegate.swift in Sources */,
+				DD05D9BB29C8AD2E00E14F03 /* SceneDelegate.swift in Sources */,
+				DD4873A629CCCBAB009F4D38 /* Coordinates.swift in Sources */,
+				DD0F5A4429EB329400259E94 /* MKMapView+Extension.swift in Sources */,
+				DDB6E78529DDAC4A00824511 /* SearchTextField.swift in Sources */,
+				DDC5288D29EC2E96007FCAA9 /* ReservationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD05D9C329C8AD3300E14F03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD05D9C429C8AD3300E14F03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD05D9C729C8AD3300E14F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD05D9C829C8AD3300E14F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD05D9CA29C8AD3300E14F03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PM - sport club/Helpers/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sports.PM---sport-club";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DD05D9CB29C8AD3300E14F03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PM - sport club/Helpers/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sports.PM---sport-club";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD05D9B029C8AD2E00E14F03 /* Build configuration list for PBXProject "PM - sport club" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD05D9C729C8AD3300E14F03 /* Debug */,
+				DD05D9C829C8AD3300E14F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD05D9C929C8AD3300E14F03 /* Build configuration list for PBXNativeTarget "PM - sport club" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD05D9CA29C8AD3300E14F03 /* Debug */,
+				DD05D9CB29C8AD3300E14F03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD05D9E029CA2B3A00E14F03 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD05D9E129CA2B3A00E14F03 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD05D9E029CA2B3A00E14F03 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DD05D9AD29C8AD2E00E14F03 /* Project object */;
+}

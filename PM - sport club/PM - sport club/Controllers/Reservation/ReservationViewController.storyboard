@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reservation View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ReservationViewController" id="Y6W-OH-hqX" customClass="ReservationViewController" customModule="PM___sport_club" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Rht-lE-1gb">
+                                <rect key="frame" x="15" y="60" width="345" height="178"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="90J-1d-dqQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                        <color key="backgroundColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MMH-Ea-wXg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ECk-e7-cVb">
+                                        <rect key="frame" x="0.0" y="64" width="345" height="50"/>
+                                        <color key="backgroundColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rTk-tU-DPh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="daG-Jb-876">
+                                        <rect key="frame" x="0.0" y="128" width="345" height="50"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eZC-87-iNL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="90J-1d-dqQ" secondAttribute="trailing" id="4Kp-lp-cEp"/>
+                                    <constraint firstAttribute="trailing" secondItem="ECk-e7-cVb" secondAttribute="trailing" id="oHq-6V-Uat"/>
+                                    <constraint firstAttribute="trailing" secondItem="daG-Jb-876" secondAttribute="trailing" id="q7c-pR-rfd"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbD-5C-gJT">
+                                <rect key="frame" x="15" y="268" width="345" height="50"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.1843137255" blue="0.63557159900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p9h-5g-BHN"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Забронировать"/>
+                                <connections>
+                                    <action selector="reserveButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="paL-dw-6Ey"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LbD-5C-gJT" firstAttribute="top" secondItem="Rht-lE-1gb" secondAttribute="bottom" constant="30" id="2yX-5y-fEM"/>
+                            <constraint firstItem="LbD-5C-gJT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="9BT-y2-WdY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LbD-5C-gJT" secondAttribute="trailing" constant="15" id="MF5-jz-4hL"/>
+                            <constraint firstItem="Rht-lE-1gb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="hH3-nF-ZTI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rht-lE-1gb" secondAttribute="trailing" constant="15" id="jCB-Te-02d"/>
+                            <constraint firstItem="Rht-lE-1gb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="saV-mu-Gr7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QV0-NH-ya2"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="daG-Jb-876" id="KEJ-gl-Mwg"/>
+                        <outlet property="nameTextField" destination="90J-1d-dqQ" id="m4j-VQ-oJx"/>
+                        <outlet property="phoneTextField" destination="ECk-e7-cVb" id="DrQ-gn-qYz"/>
+                        <outlet property="reserveButtonView" destination="LbD-5C-gJT" id="4oM-wG-527"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
