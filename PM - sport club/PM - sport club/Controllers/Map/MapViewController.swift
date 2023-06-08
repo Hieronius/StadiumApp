@@ -20,7 +20,7 @@ final class MapViewController: UIViewController {
     @IBOutlet private weak var zoomToLocationButtonView: UIButton!
     @IBOutlet private weak var setRoutineButtonView: UIButton!
     
-    // MARK: - CalloutView
+    // MARK: CalloutView
     
     @IBOutlet private weak var calloutView: UIView!
     @IBOutlet private weak var calloutImageView: UIImageView!
@@ -272,7 +272,7 @@ final class MapViewController: UIViewController {
         detailButtonView.setAttributedTitle(attributedTitle, for: .normal)
     }
     
-    // MARK: - Get MapView Stadium Pins
+    // MARK: Get MapView Stadium Pins
     
     private func addPins() {
         mapPinsArray += soccerStadiumPins
@@ -440,8 +440,6 @@ final class MapViewController: UIViewController {
     }
    
 }
-
-// MARK: - Extensions
  
 // MARK: - Extension: CLLocationManagerDelegate
 
@@ -457,7 +455,6 @@ extension MapViewController: CLLocationManagerDelegate {
         checkLocationAuthorization()
     }
 }
- 
  
 // MARK: - Extension: MKMapRect
 
