@@ -25,7 +25,7 @@ Mobile application that allows you to search for and book sports facilities for 
 ### part 1
 https://github.com/Hieronius/StadiumApp/assets/41345907/42037d2d-9cc0-40a2-95cc-b9611bebc0cb
 
-### Part 2
+### part 2
 https://github.com/Hieronius/StadiumApp/assets/41345907/0f93f259-8bd1-4fd0-be04-3120b9f54680
 
 ### part 3
