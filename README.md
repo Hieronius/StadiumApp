@@ -1,6 +1,4 @@
-# StadiumApp
-
-## About the app:
+# 🏟StadiumApp
 
 Mobile application that allows you to search for and book sports facilities for various sports in your city. You can map the shortest route to the chosen sports facility without leaving the application. Each location has its own card with detailed information. The information includes the address, phone, website, and approximate distance to the location. You can also view photos of the facility before visiting and make your choice. You can sign up for a visit in the application in a special window.
 
