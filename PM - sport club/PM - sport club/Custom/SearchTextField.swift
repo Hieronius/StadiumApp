@@ -1,10 +1,3 @@
-//
-//  SearchTextField.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 05.04.2023.
-//
-
 import UIKit
 
 final class SearchTextField: UITextField {

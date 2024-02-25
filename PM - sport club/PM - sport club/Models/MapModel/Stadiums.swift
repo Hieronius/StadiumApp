@@ -1,10 +1,3 @@
-//
-//  Stadiums.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 23.03.2023.
-//
-
 import UIKit
 
 struct Stadiums {

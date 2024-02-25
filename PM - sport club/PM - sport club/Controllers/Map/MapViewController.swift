@@ -1,10 +1,3 @@
-//
-//  MapViewController.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 26.03.2023.
-//
-
 import UIKit
 import CoreLocation
 import MapKit

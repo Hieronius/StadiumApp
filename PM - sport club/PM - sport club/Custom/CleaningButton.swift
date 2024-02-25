@@ -1,10 +1,3 @@
-//
-//  CleaningButton.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 06.04.2023.
-//
-
 import UIKit
 
 final class CleaningButton: UIButton {

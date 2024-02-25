@@ -1,10 +1,3 @@
-//
-//  MKMapView+Extension.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 15.04.2023.
-//
-
 import MapKit
 
 extension MKMapView {

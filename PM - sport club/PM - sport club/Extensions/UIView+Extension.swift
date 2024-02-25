@@ -1,10 +1,3 @@
-//
-//  UIView + Extension.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 21.03.2023.
-//
-
 import UIKit
 
 extension UIView {

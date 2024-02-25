@@ -1,10 +1,3 @@
-//
-//  StadiumInfo.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 07.04.2023.
-//
-
 import UIKit
 
 struct StadiumInfo {

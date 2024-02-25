@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 20.03.2023.
-//
-
 import UIKit
 import IQKeyboardManagerSwift
 

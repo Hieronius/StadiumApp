@@ -1,10 +1,3 @@
-//
-//  ReservationViewController.swift
-//  PM - sport club
-//
-//  Created by Арсентий Халимовский on 16.04.2023.
-//
-
 import UIKit
 
 final class ReservationViewController: UIViewController {
